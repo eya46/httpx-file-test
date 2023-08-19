@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "httpx-test"
+version = "0.1.0"
+description = ""
+authors = ["eya46 <61458340+eya46@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "httpx_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.101.1"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+httpx = "^0.24.1"
+python-multipart = "^0.0.6"
+aiohttp = "^3.8.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
